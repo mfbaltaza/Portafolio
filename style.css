@@ -1,0 +1,168 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    background-image: url(img/isla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+/*Menu de navegacion*/
+
+.menu {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff; 
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
+    
+}
+
+.logo {
+    color: #fff;
+    padding: 0 57px;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+
+}
+
+.menu_items li a{
+    padding:7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu_items li:hover, li.active {
+    background-color: rgba(0, 0, 0, .7);
+    transition: .3s;
+
+}
+
+.ham{
+    margin: 0px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+    
+}
+
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 23px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+
+
+ul.show {
+    top: 65px;
+    
+}
+
+
+
+
+/*Navbar Responsive*/
+
+@media (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        padding-left: 25px;
+    }
+    .logo{
+        padding-left: 25px;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+    }
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .menu_items{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        
+    }
+    .menu_items li{
+        width: 100%;
+        text-align: center;
+        padding:20px;
+    }
+}
+
+@keyframes Muestraelmenu{
+    from{opacity: 0;}
+    to{
+        opacity: 1;
+    }
+}
+
+/*Activar nav en movil "SCRIPT"*/
+
+.menu_items.activado{
+    display: flex;
+    animation:Muestraelmenu 300ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+
+    
