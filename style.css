@@ -7,11 +7,37 @@
 }
 
 body {
-    background-image: url(img/isla.jpg);
+    background-image: url(img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
+
+}
+
+/*HEADER*/
+
+.titulo{
+    color: #fffffe;
+    height: 15vh;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
 
 
+.contenedor-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    text-align: center;
+   
+}
+
+.parrafo{
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px;
 }
 
 /*Menu de navegacion*/
@@ -45,16 +71,19 @@ body {
 .menu_items li{
     border-radius: 3px;
     margin: 0 5px;
+    font-family: 'Poppins', sans-serif; 
+
 
 }
 
 .menu_items li a{
     padding:7px 13px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     display: block;
     text-transform: uppercase;
     color: #fff;
+    font-family: 'Poppins', sans-serif; 
 }
 
 .menu_items li:hover, li.active {
@@ -83,13 +112,21 @@ body {
 }
 
 
-
 ul.show {
     top: 65px;
     
 }
 
+/*About*/
 
+.about-c{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
 
 
 /*Navbar Responsive*/
