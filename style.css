@@ -7,7 +7,6 @@
 }
 
 body {
-    background-image: url(img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -32,6 +31,10 @@ body {
     height:100vh;
     text-align: center;
    
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .parrafo{
